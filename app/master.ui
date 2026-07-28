@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Master</class>
+ <widget class="QWidget" name="Master">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1433</width>
+    <height>815</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1411</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_17">
+    <attribute name="title">
+     <string>Статус обращений</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_64">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>577</y>
+       <width>521</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_19">
+      <item>
+       <widget class="QGroupBox" name="groupBox_65">
+        <property name="title">
+         <string>Завершить заказ</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_29">
+         <item>
+          <widget class="QGroupBox" name="groupBox_66">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QFormLayout" name="formLayout_22">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_112">
+              <property name="text">
+               <string>Введите id обращения</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="idUpdate_11"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_28">
+           <property name="text">
+            <string>Завершить заказ</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTableView" name="ordersView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>561</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_18">
+    <attribute name="title">
+     <string>Каталог услуг</string>
+    </attribute>
+    <widget class="QTableView" name="servicesView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1385</width>
+       <height>741</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_13">
+    <attribute name="title">
+     <string>Запчасти</string>
+    </attribute>
+    <layout class="QFormLayout" name="formLayout_19">
+     <item row="0" column="0" colspan="2">
+      <widget class="QTableView" name="sparesView"/>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QGroupBox" name="groupBox_57">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QGroupBox" name="groupBox_58">
+          <property name="title">
+           <string>Добавление новой запчасти</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_26">
+           <item>
+            <widget class="QGroupBox" name="groupBox_59">
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QFormLayout" name="formLayout_20">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_109">
+                <property name="text">
+                 <string>Введите название</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="nameInsert_9"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_110">
+                <property name="text">
+                 <string>Введите код</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="codeInsert_9"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_114">
+                <property name="text">
+                 <string>Введите цену</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="priceInsert_9"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_111">
+                <property name="text">
+                 <string>Введите количество</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="quantityInsert_9"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_25">
+             <property name="text">
+              <string>Добавить запчасть</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_60">
+          <property name="title">
+           <string>Измение запчасти</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_27">
+           <item>
+            <widget class="QGroupBox" name="groupBox_61">
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QFormLayout" name="formLayout_21">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_121">
+                <property name="text">
+                 <string>Введите id запчасти</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="idUpdate_9">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_115">
+                <property name="text">
+                 <string>Введите название</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="nameUpdate_9"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_116">
+                <property name="text">
+                 <string>Введите код</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="codeUpdate_9"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_120">
+                <property name="text">
+                 <string>Введите цену</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="priceUpdate_9"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_117">
+                <property name="text">
+                 <string>Введите количество</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="quantityUpdate_9"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_26">
+             <property name="text">
+              <string>Изменить запчасть</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="tab_14">
+    <attribute name="title">
+     <string>Использованные запчасти</string>
+    </attribute>
+    <widget class="QTableView" name="usedSpares">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>501</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>520</y>
+       <width>1391</width>
+       <height>227</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox_67">
+        <property name="title">
+         <string>Добавить используемую запчасть</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_30">
+         <item>
+          <widget class="QGroupBox" name="groupBox_68">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QFormLayout" name="formLayout_23">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_123">
+              <property name="text">
+               <string>Введите id обращения</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="idUpdate_10">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_124">
+              <property name="text">
+               <string>Введите номер услуги</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="serviceUpdate_10"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_125">
+              <property name="text">
+               <string>Введите номер запчасти</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="spareUpdate_10"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_29">
+           <property name="text">
+            <string>Добавить запчасть</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_69">
+        <property name="title">
+         <string>Удалить используемые запчасти</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_31">
+         <item>
+          <widget class="QGroupBox" name="groupBox_70">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QFormLayout" name="formLayout_24">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_126">
+              <property name="text">
+               <string>Введите id использованных запчастей</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="idUsedSparesDelete">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_30">
+           <property name="text">
+            <string>Удалить запчасть</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
