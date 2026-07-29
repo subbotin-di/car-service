@@ -1,4 +1,4 @@
---1.Добавить нового клиента
+--1.Г„Г®ГЎГ ГўГЁГІГј Г­Г®ГўГ®ГЈГ® ГЄГ«ГЁГҐГ­ГІГ 
 CREATE PROCEDURE insert_client (
 	@login VARCHAR(30),
 	@password VARCHAR(30),
@@ -33,14 +33,14 @@ GO
 EXEC insert_client
 '12345',
 '12345',
-'Иван',
-'Иванов',
-'Иванович',
+'Г€ГўГ Г­',
+'Г€ГўГ Г­Г®Гў',
+'Г€ГўГ Г­Г®ГўГЁГ·',
 '+79123456789'
 GO
 
 
---2.Создать заказ
+--2.Г‘Г®Г§Г¤Г ГІГј Г§Г ГЄГ Г§
 CREATE PROCEDURE create_order (
 @car_id INT,
 @manager_id INT,
@@ -56,7 +56,7 @@ BEGIN
 		creation_date)
 	VALUES (
 	@car_id,
-	'выполняется',
+	'ГўГ»ГЇГ®Г«Г­ГїГҐГІГ±Гї',
 	@manager_id,
 	@master_id,
 	GETDATE())
