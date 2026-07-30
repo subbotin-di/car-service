@@ -1,7 +1,7 @@
-USE car_service
+﻿USE car_service
 GO
 
---1.Insert data into tables
+--1. Insert data into tables
 
 INSERT INTO Clients ([name], surname, patronymic, phone_number, id_login_details) 
 VALUES ('test_name', 'test_surname', 'test_patronymic', '+79000000000', '15')
@@ -28,7 +28,7 @@ DECRYPTION BY CERTIFICATE certificate;
 INSERT INTO Login_Details ([login], [password])
 VALUES ('" + login + "', EncryptByKey(Key_GUID('symmetric_key'),'" + password + "'))
 
---2.Select data from tables
+--2. Select data from tables
 
 SELECT * 
 FROM [Services]
@@ -51,7 +51,7 @@ DECRYPTION BY CERTIFICATE certificate;
 SELECT * FROM Login_Details WHERE login = '" + login + "' 
 AND convert(char,DecryptByKey(password)) = '" + password + "'
 
---3.Update data in tables
+--3. Update data in tables
 
 UPDATE Clients 
 SET id_login_details = '2' 
@@ -88,7 +88,7 @@ DECRYPTION BY CERTIFICATE certificate;
 UPDATE Login_Details SET password = EncryptByKey(Key_GUID('symmetric_key'),'" + password + "') 
 WHERE id = '" + idLoginDetails + "'
 
---4.Delete data from tables
+--4. Delete data from tables
 
 DELETE FROM Clients 
 WHERE phone_number = '+79000000000'
